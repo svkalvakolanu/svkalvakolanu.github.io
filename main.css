@@ -12,6 +12,14 @@ main {
     grid-column: 1;
 }
 
+ul {
+    list-style: none;
+}
+
+li {
+    float: left;
+}
+
 h1{
     font-weight: bold;
 }
@@ -64,4 +72,9 @@ p, ul {
 .yellowbox {
     background: yellow;
     grid-row: 4;
+}
+
+item {
+    max-width: 5px;
+    max-height: 500px;
 }
