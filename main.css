@@ -22,7 +22,6 @@ hr {
 }
 
 .container {
-    grid-row: 1 / span 4;
     grid-column: 2;
 }
 
@@ -36,6 +35,7 @@ p, ul {
 
 .green {
     color: green;
+
 }
 
 .blue {
@@ -48,16 +48,20 @@ p, ul {
 
 .redbox {
     background: red;
+    grid-row: 1;
 }
 
 .bluebox {
     background: blue;
+    grid-row: 2;
 }
 
 .greenbox {
     background: green;
+    grid-row 3;
 }
 
 .yellowbox {
     background: yellow;
+    grid-row: 4;
 }
