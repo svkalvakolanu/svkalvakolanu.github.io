@@ -1,0 +1,38 @@
+body {
+    
+}
+
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+hr {
+    margin: auto;
+    border-top: 2px solid #000000;
+}
+
+.container {
+
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+}
+
+.red {
+    color: red;
+}
+
+.green {
+    color: green;
+}
+
+.blue {
+    color: blue;
+}
+
+.yellow {
+    color: yellow;
+}
