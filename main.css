@@ -1,30 +1,32 @@
 body {
     display: grid;
     grid-template-columns: 1fr 5px;
-    grid-template-rows: 200px 1fr 200px;
+    grid-template-rows: 200px 1fr 1fr 200px;
+    background: black;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
 }
 
 main {
-    grid-row: 2;
+    grid-row: 2 / span 2;
     grid-column: 1;
 }
 
 h1{
-    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
 }
 
 hr {
     margin: auto;
-    border-top: 2px solid #000000;
+    border-top: 2px solid #FFFFFF;
 }
 
 .container {
-    grid-row: 1 / span 3;
+    grid-row: 1 / span 4;
     grid-column: 2;
 }
 
-p {
+p, ul {
     font-family: 'Lato', sans-serif;
 }
 
@@ -42,4 +44,20 @@ p {
 
 .yellow {
     color: yellow;
+}
+
+.redbox {
+    background: red;
+}
+
+.bluebox {
+    background: blue;
+}
+
+.greenbox {
+    background: green;
+}
+
+.yellowbox {
+    background: yellow;
 }
