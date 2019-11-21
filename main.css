@@ -13,10 +13,13 @@ main {
 }
 
 ul {
-    list-style: none;
+    display: inline;
+    font-family: 'Lato', sans-serif;
+
 }
 
 li {
+    text-align: left;
     float: left;
 }
 
@@ -33,7 +36,7 @@ hr {
     grid-column: 2;
 }
 
-p, ul {
+p {
     font-family: 'Lato', sans-serif;
 }
 
