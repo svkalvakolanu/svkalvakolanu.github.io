@@ -1,7 +1,7 @@
 body {
     display: grid;
-    grid-template-columns: 1fr 5px;
-    grid-template-rows: 200px 1fr 1fr 200px;
+    grid-template-columns: 1fr 5px 5px;
+    grid-template-rows: 150px 1fr 1fr 150px;
     background: black;
     color: white;
     font-family: 'Montserrat', sans-serif;
@@ -14,11 +14,22 @@ main {
 
 ul {
     display: inline;
+    width: 50px;
     font-family: 'Lato', sans-serif;
 }
 
+li {
+    display: inline;
+    margin: 3px;
+}
+
 img {
-    align-content: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    max-width: 200px;
+    max-height: 200px;
 }
 
 li {
@@ -36,11 +47,13 @@ hr {
 }
 
 .container {
-    grid-column: 2;
+    grid-column: 3;
+    grid-row: 1 / span 4;
 }
 
 p {
     font-family: 'Lato', sans-serif;
+    font-size: 16px;
 }
 
 .red {
@@ -60,27 +73,27 @@ p {
     color: yellow;
 }
 
+.item {
+    height: 25%;
+  }
+
 .redbox {
     background: red;
-    grid-row: 1;
+    grid-row: 1 / span 1;
 }
 
 .bluebox {
     background: blue;
-    grid-row: 2;
+    grid-row: 2 /span 1;
 }
 
 .greenbox {
     background: green;
-    grid-row 3;
+    grid-row 3 /span 1;
 }
 
 .yellowbox {
     background: yellow;
-    grid-row: 4;
+    grid-row: 4 / span 1;
 }
 
-item {
-    max-width: 5px;
-    max-height: 500px;
-}
