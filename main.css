@@ -1,103 +1,240 @@
+html {
+  background: black;
+}
+
 body {
-    display: grid;
-    grid-template-columns: 1fr 5px 5px;
-    grid-template-rows: 150px 1fr 1fr 150px;
-    background: black;
-    color: white;
-    font-family: 'Montserrat', sans-serif;
-}
-
-main {
-    grid-row: 2 / span 2;
-    grid-column: 1;
-}
-
-ul {
-    display: inline;
-    width: 50px;
-    font-family: 'Lato', sans-serif;
-}
-
-li {
-    display: inline;
-    margin: 3px;
+  margin: 2%;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  height: 98.5vh;
+  text-align: center;
 }
 
 img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    max-width: 200px;
-    max-height: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  max-width: 200px;
+  max-height: 200px;
 }
 
-li {
-    text-align: left;
-    float: left;
-}
-
-h1{
-    font-weight: bold;
-}
-
-hr {
-    margin: auto;
-    border-top: 2px solid #FFFFFF;
-}
-
-.container {
-    grid-column: 3;
-    grid-row: 1 / span 4;
+.child {
+  margin: 5%;
 }
 
 p {
-    font-family: 'Lato', sans-serif;
-    font-size: 16px;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
 }
 
-.red {
-    color: red;
+.icon {
+  font-size: 4rem;
+  margin: auto 5px;
+  margin: 1%;
+  color: white;
 }
 
-.green {
-    color: green;
-
+.icon-img {
+  display: inline-block;
+  margin: auto 5px;
+  width: 4em;
+  height: 4em;
 }
 
-.blue {
-    color: blue;
+.brand-statement {
+  width: 70%;
+  margin: auto;
+  font-size: 1em;
 }
 
-.yellow {
-    color: yellow;
+.navi {
+  height: 50%;
+  margin: auto;
 }
 
-.item {
-    height: 25%;
+a {
+  height: 50%;
+  margin: auto 20px;
+  vertical-align: middle;
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project {
+  width: 30%;
+  border: 2px solid white;
+  padding: 5px;
+  margin: 10px;
+}
+
+.button {
+  display: inline-block;
+  margin: auto;
+  padding: .5em .5em;
+  font-size: .75em;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+.bar {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  margin: 0;
+  width: 100%;
+  border: 10px solid #f7567c;
+  animation: bottomBar 15s;
+  -moz-animation: bottomBar 15s infinite; /* Firefox */
+  -webkit-animation: bottomBar 15s infinite; /* Safari and Chrome */
+}
+
+@-moz-keyframes bottomBar /* Firefox */ {
+  0% {
+    border: 5px solid #f7567c;
   }
-
-.redbox {
-    background: red;
-    grid-row: 1 / span 1;
+  10% {
+    border: 5px solid #657ed4;
+  }
+  20% {
+    border: 5px solid #ff3c38;
+  }
+  30% {
+    border: 5px solid #fbff12;
+  }
+  40% {
+    border: 5px solid #ff206e;
+  }
+  50% {
+    border: 5px solid #315c2b;
+  }
+  60% {
+    border: 5px solid #ff206e;
+  }
+  70% {
+    border: 5px solid #fbff12;
+  }
+  80% {
+    border: 5px solid #ff3c38;
+  }
+  90% {
+    border: 5px solid #657ed4;
+  }
+  100% {
+    border: 5px solid #f7567c;
+  }
 }
 
-.bluebox {
-    background: blue;
-    grid-row: 2 /span 1;
+@-webkit-keyframes bottomBar /* Safari and Chrome */ {
+  0% {
+    border: 5px solid #f7567c;
+  }
+  10% {
+    border: 5px solid #657ed4;
+  }
+  20% {
+    border: 5px solid #ff3c38;
+  }
+  30% {
+    border: 5px solid #fbff12;
+  }
+  40% {
+    border: 5px solid #ff206e;
+  }
+  50% {
+    border: 5px solid #315c2b;
+  }
+  60% {
+    border: 5px solid #ff206e;
+  }
+  70% {
+    border: 5px solid #fbff12;
+  }
+  80% {
+    border: 5px solid #ff3c38;
+  }
+  90% {
+    border: 5px solid #657ed4;
+  }
+  100% {
+    border: 5px solid #f7567c;
+  }
 }
 
-.greenbox {
-    background: green;
-    grid-row 3 /span 1;
+@-moz-keyframes nav /* Firefox */ {
+  0% {
+    background: #f7567c;
+  }
+  10% {
+    background: #657ed4;
+  }
+  20% {
+    background: #ff3c38;
+  }
+  30% {
+    background: #0e79b2;
+  }
+  40% {
+    background: #ff206e;
+  }
+  50% {
+    background: #315c2b;
+  }
+  60% {
+    background: #ff206e;
+  }
+  70% {
+    background: #0e79b2;
+  }
+  80% {
+    background: #ff3c38;
+  }
+  90% {
+    background: #657ed4;
+  }
+  100% {
+    background: #f7567c;
+  }
 }
 
-.yellowbox {
-    background: yellow;
-    grid-row: 4 / span 1;
-}
-
-footer {
-    margin: 10px 0px;
-    font-size: 8px;
+@-webkit-keyframes nav /* Safari and Chrome */ {
+  0% {
+    background: #f7567c;
+  }
+  10% {
+    background: #657ed4;
+  }
+  20% {
+    background: #ff3c38;
+  }
+  30% {
+    background: #0e79b2;
+  }
+  40% {
+    background: #ff206e;
+  }
+  50% {
+    background: #315c2b;
+  }
+  60% {
+    background: #ff206e;
+  }
+  70% {
+    background: #0e79b2;
+  }
+  80% {
+    background: #ff3c38;
+  }
+  90% {
+    background: #657ed4;
+  }
+  100% {
+    background: #f7567c;
+  }
 }
