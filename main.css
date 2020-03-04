@@ -76,8 +76,8 @@ a {
 .button {
   display: inline-block;
   margin: auto;
-  padding: .5em .5em;
-  font-size: .75em;
+  padding: 0.5em 0.5em;
+  font-size: 0.75em;
   background-color: white;
   color: black;
   cursor: pointer;
