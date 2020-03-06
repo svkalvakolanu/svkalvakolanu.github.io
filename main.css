@@ -58,6 +58,15 @@ a {
   margin: auto 20px;
   vertical-align: middle;
   text-decoration: none;
+  color: white;
+}
+
+a:hover{
+  opacity: .6;
+}
+
+.resume:hover {
+  opacity: .6;
 }
 
 .container {
