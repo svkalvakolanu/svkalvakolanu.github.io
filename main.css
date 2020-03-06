@@ -73,9 +73,39 @@ a {
   margin: 10px;
 }
 
+.box {
+  border: 2px solid white;
+  padding: 5px;
+  margin: auto;
+}
+
+.frontend-tech {
+  max-width: 40rem;
+}
+
+.backend-tech {
+  width: 25rem;
+}
+
+.databases-tech {
+  width: 15rem;
+}
+
+.testing-tech {
+  width: 30rem;
+}
+
+.other-tech {
+  width: 25rem;
+}
+
+.learning-tech {
+  width: 15rem;
+}
+
 .button {
   display: inline-block;
-  margin: auto;
+  margin: 3px;
   padding: 0.5em 0.5em;
   font-size: 0.75em;
   background-color: white;
